@@ -1,8 +1,11 @@
-import pandas as pd
+import pandas as pd   # Импортируем библиотеку pandas
 
-df = pd.DataFrame()
 df = pd.read_csv('top_100_clubs.csv')
-print(df.head())
-print(df.info())
-print(df.describe())
+# Читаем данные из файла 'top_100_clubs.csv' и сохраняем в переменную df
 
+print(df.head())
+# Выводим первые 5 строк DataFrame
+print(df.info())
+# Выводим информацию о DataFrame
+print(df.describe())
+# Выводим описательную статистику DataFrame
